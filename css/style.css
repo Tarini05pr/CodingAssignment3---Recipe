@@ -116,6 +116,20 @@ legend {
   color: #026e00;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .left {
+  text-align: left;
+}
+
+.footer-content .right {
+  text-align: right;
+}
+
 
 h1 {
   color: #006607;
