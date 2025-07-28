@@ -1,74 +1,186 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: linear-gradient(to right, #ffe4c4, #f5d0ff);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #2e003e;
+  font-family: 'Verdana', sans-serif;
+  color: #003e00;
+  padding: 1rem;
 }
 
-h1, h2, h3 {
-  color: #4a0066;
-  text-decoration: underline;
-  font-family: "Georgia", serif;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-p {
-  color: #3a003f;
-}
 
-figcaption {
-  color: #ffffff;
-  font-style: italic;
+.header {
+  grid-column: 1 / span 3;
+  background-color: #cdf9d0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  color: #004b07;
   text-align: center;
 }
 
-.ingredients {
-  background-color: #d69be0;
+
+.links {
+  background-color: #ccf7d5;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  color: #005e09;
 }
 
-.instructions {
-  background-color: #aa46d4;
-}
-
-ul, ol, li {
-  color: #fff;
-}
-
-.rate {
-  background-color: #cf71f7;
+.main-content {
   text-align: center;
+  background-color: #d9ffe1;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Lucida Console', monospace;
+  color: #00591c;
+}
+
+.parfait-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.rating-conversion {
+  background-color: #e3ffe5;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Arial Narrow', sans-serif;
+  color: #054400;
 }
 
 fieldset {
-  width: 280px;
-  background: #d795f5;
+  background: #95f59d;
+  margin-bottom: 1rem;
+  font-family: 'Calibri', sans-serif;
+  color: #074300;
 }
 
 legend {
-  color: white;
+  background-color: #00a023;
+  color: #ffffff;
   font-weight: bold;
-  background-color: #7b00a0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.ingredients {
+  background-color: #9be09b;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #004004;
+}
+
+.equipment {
+  background-color: #5df562;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #005909;
+}
+
+.instructions {
+  background-color: #46d454;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Helvetica', sans-serif;
+  color: #f4f4f4;
+}
+
+
+.footer {
+  grid-column: 1 / span 3;
+  background-color: #eee;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 10px;
+  font-style: italic;
+  font-family: 'Tahoma', sans-serif;
+  color: #026e00;
+}
+
+
+h1 {
+  color: #006607;
+  font-family: 'Georgia', serif;
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: #006602;
+  font-family: 'Palatino Linotype', serif;
+  text-decoration: overline;
+}
+
+h3 {
+  color: #00660f;
+  font-family: 'Impact', fantasy;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #003f02;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: #007c02;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+}
+
+.rate {
+  background-color: #71f773;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: 'Courier', monospace;
+  font-weight: bold;
 }
 
 input {
-  color: #000;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  font-family: 'Consolas', monospace;
+  color: #000000;
 }
 
-input:hover {
-  background-color: #f3e6ff;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 2rem auto;
-}
-
-.container > div{
-  flex: 1 1 calc(50% - 1rem);
-  min-height: 200px;
-  padding: 1rem;
-  border-radius: 10px;
-  box-sizing: border-box;
+figcaption {
+  color: #149323;
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-family: 'Garamond', serif;
+  font-size: 0.95rem;
 }
